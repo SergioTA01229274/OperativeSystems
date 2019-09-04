@@ -90,8 +90,7 @@ sys_uptime(void)
   return xticks;
 }
 
-int
-sys_shutdown(void){
+int sys_shutdown(void) {
     outw(0x604, 0x2000);
     return 0;
 }
